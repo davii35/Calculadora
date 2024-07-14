@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <section class="container-historico">
+        <p class="historico-instrucao">Clique para copiar o resultado</p>
+        <ul class="historico">
+            <li class="historico-vazio">O histórico está vazio!</li>
+        </ul>
+        <button class="historico-botao botao-limpar">Limpar histórico</button>
+        <button class="historico-botao botao-fechar">Fechar</button>
+    </section>
+
+    <main class="calculadora">
+        <section class="calculadora_display-container">
+            <p class="display-secundario"></p>
+            <p class="display-principal"></p>
+        </section>
+
+        <section class="calculadora_opcoes">
+            <button id="historico" title="Abrir histórico" class="botao botao-opcoes"><img src="src/icons/historico.svg" alt="Histórico"></button>
+            <button id="copiar" title="Copiar resultado" class="botao botao-opcoes"><img src="src/icons/copiar.svg" alt="Copiar"></button>
+            <button id="apagar" title="Apagar" class="botao botao-opcoes"><img src="src/icons/apagar.svg" alt="Apagar"></button>
+        </section>
+
+        <section class="calculadora_botoes-numeros">
+            <button class="botao botao-numerico">9</button>
+            <button class="botao botao-numerico">8</button>
+            <button class="botao botao-numerico">7</button>
+            <button class="botao botao-numerico">6</button>
+            <button class="botao botao-numerico">5</button>
+            <button class="botao botao-numerico">4</button>
+            <button class="botao botao-numerico">3</button>
+            <button class="botao botao-numerico">2</button>
+            <button class="botao botao-numerico">1</button>
+            <button class="botao botao-numerico">.</button>
+            <button class="botao botao-numerico">0</button>
+        </section>
+        <div class="calculadora_botoes-funcoes">
+            <button id="limpar" title="Limpar" class="botao botao-funcao">C</button>
+            <button id="dividir" data-operador=" ÷ " title="Dividir" class="botao botao-funcao">&#247</button>
+            <button id="multiplicar" data-operador=" x " title="Multiplicar" class="botao botao-funcao">&#215</button>
+            <button id="subtrair" data-operador=" - " title="Subtrair" class="botao botao-funcao">&#8722</button>
+            <button id="somar" data-operador=" + " title="Somar" class="botao botao-funcao">&#43</button>
+            <button id="resultado" title="Ver resultado" class="botao botao-funcao">&#61</button>
+        </div>
+    </main>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
